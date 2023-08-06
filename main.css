@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contanier {
+    background-color: #eee;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.contanier .form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contanier .inputText{
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 4px;
+    width: 70%;
+    font-size: 18px;
+}
+.contanier .add{
+    border: none;
+    color: white;
+    background-color: #8BC34A;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+.contanier .add:hover {
+ opacity: 0.7;
+}
+.tasks {
+    position: relative;
+    background-color: #eee;
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    /* height: fit-content; */
+}
+.tasks .task {
+    margin-bottom: 15px;
+}
+
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+
+.tasks .task.do {
+    opacity: 0.5;
+}
+.tasks .task {
+    background-color: white;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.tasks .task span{
+    position: absolute;
+    background-color: #da1002;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    right:50px;
+
+}
+.tasks .task .done{
+    background-color: #8BC34A;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    right:110px;
+
+}
+.btns{
+    margin-top: 20px;
+}
+.delAll {
+    background-color: #da1002;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.delAll:hover{
+    opacity: 0.7;
+}
+.hide {
+    display: none;
+}
